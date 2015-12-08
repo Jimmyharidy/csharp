@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ovning4Uppgift6", "Ovning4U
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OvningArv", "OvningArv\OvningArv.csproj", "{860F1988-C4C9-448D-B157-71A0B673447F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Laboration 5", "Laboration 5\Laboration 5.csproj", "{44F6FA17-51C2-4245-9B4C-A0B30A4431C3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{860F1988-C4C9-448D-B157-71A0B673447F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{860F1988-C4C9-448D-B157-71A0B673447F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{860F1988-C4C9-448D-B157-71A0B673447F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44F6FA17-51C2-4245-9B4C-A0B30A4431C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44F6FA17-51C2-4245-9B4C-A0B30A4431C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44F6FA17-51C2-4245-9B4C-A0B30A4431C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44F6FA17-51C2-4245-9B4C-A0B30A4431C3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

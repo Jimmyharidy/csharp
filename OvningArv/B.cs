@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace OvningArv
 {
-    class B
+    class B : A
     {
+        public B()
+        {
+            Console.WriteLine();
+        }
     }
 }

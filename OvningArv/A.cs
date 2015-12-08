@@ -8,5 +8,9 @@ namespace OvningArv
 {
     class A
     {
+        public A()
+        {
+            Console.WriteLine("Klass A");
+        }
     }
 }
