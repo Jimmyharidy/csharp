@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OvningArv
 {
-    class C
+    class C : B
     {
     }
 }
