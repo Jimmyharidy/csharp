@@ -15,7 +15,49 @@ namespace Kollektioner
             //BussLista();
             //FlygplanLista();
             //SingleFlyg();
-            var lista = new List<Boolean>() {true,false,false,true};
+            //ClearList();
+            //IndexOfMethod();
+            //SortingPlaneList();
+
+        }
+
+        private static void SortingPlaneList()
+        {
+            var planes = new List<Airplane>()
+           {
+               new Airplane(seats:2, pilots:5),
+               new Airplane(seats:4, pilots:10),
+               new Airplane(seats:6, pilots:1),
+               new Airplane(seats:8, pilots:15),
+               new Airplane(seats:10, pilots:0),
+               new Airplane(seats:1, pilots:7),
+               new Airplane(seats:0, pilots:5),
+               new Airplane(seats:3, pilots:9),
+               new Airplane(seats:6, pilots:13)
+           };
+            planes.Sort();
+            planes.Reverse();
+            foreach (var airplane in planes)
+            {
+                Console.WriteLine(airplane);
+            }
+            Console.ReadLine();
+        }
+
+        private static void IndexOfMethod()
+        {
+            List<int> tal = new List<int>
+                                    (new int[] { 3, 2, 3, 2, 29, 33, 33, 32 });
+            int indexPosition = tal.IndexOf(29);  // position 4 är första förekomsten av 29. 
+            Console.WriteLine(indexPosition);  // skriver 4
+            indexPosition = tal.IndexOf(17);
+            Console.WriteLine(indexPosition);  // skriver ut -1 för att talet 17 finns ej.
+            Console.ReadLine();
+        }
+
+        private static void ClearList()
+        {
+            var lista = new List<Boolean>() { true, false, false, true };
             lista.Add(true);
             lista.Add(false);
             lista.Add(true);

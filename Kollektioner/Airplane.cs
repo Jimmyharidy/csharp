@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Kollektioner
 {
-    class Airplane
+    class Airplane : IComparable<Airplane>
     {
         public int Seats { get; set; }
         public int Pilots { get; set; }
@@ -18,6 +18,12 @@ namespace Kollektioner
         }
 
         public override string ToString() => $"Number of seats: {Seats}\nPilots: {Pilots}";
-
+        public int CompareTo(Airplane obj)
+        {
+            //Airplane testPlane = (Airplane) obj;
+            // returnera -1, 0 eller 1
+            //return testPlane.Seats.CompareTo(this.Seats);
+            return obj.Pilots.CompareTo(this.Pilots);
+        }
     }
 }
