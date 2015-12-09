@@ -15,6 +15,15 @@ namespace Kollektioner
             //BussLista();
             //FlygplanLista();
             //SingleFlyg();
+            var lista = new List<Boolean>() {true,false,false,true};
+            lista.Add(true);
+            lista.Add(false);
+            lista.Add(true);
+            lista.Add(true);
+            Console.WriteLine(lista.Count);  // antal element
+            lista.Clear();  // Raderar lista
+            Console.WriteLine(lista.Count);
+            Console.ReadLine();
         }
 
         private static void SingleFlyg()
