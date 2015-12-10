@@ -83,7 +83,10 @@ namespace StructOperatorOverlagring
             return tal;
         }
 
-      
+      //public static Cycle operator =(Cycle cycle, int tal)  // Kolla denna kod med =
+      //  {
+            
+      //  }
 
         public override string ToString()
         {
