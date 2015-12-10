@@ -10,8 +10,16 @@ namespace Exercise6
     {
         static void Main(string[] args)
         {
-            Uppgift3();
+            //Uppgift3();
             //Uppgift1();
+            MyDoubleType mdt1 = new MyDoubleType(5);
+            MyDoubleType mdt2 = mdt1 + 5;
+            MyDoubleType mdt3 = mdt1 + mdt2;
+
+            Console.WriteLine(mdt1);
+            Console.WriteLine(mdt2);
+            Console.WriteLine(mdt3);
+            Console.ReadLine();
 
         }
 
@@ -23,6 +31,11 @@ namespace Exercise6
             string myString = "JimmyBoy";
             // ulong kan inte ha negativa värden, endast positiva. Jätte långt 
             ulong SuperLångtTal = 12365478965232654589;
+            Console.WriteLine(myFloat);
+            Console.WriteLine(myLong);
+            Console.WriteLine(myChar);
+            Console.WriteLine(myString);
+            Console.WriteLine(SuperLångtTal);
         }
 
         private static void Uppgift3()
