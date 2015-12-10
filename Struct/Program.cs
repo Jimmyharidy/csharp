@@ -11,6 +11,19 @@ namespace Struct
         static void Main(string[] args)
         {
             //StructDemo1();
+            //StructDemo2();
+            Mixture mix1 = new Mixture(){MyBool = true, MyDouble = 5.5, Myint = 20};
+            Console.WriteLine(mix1);
+            Mixture mix2;
+            mix2.MyBool = false;
+            mix2.MyDouble = 100.3321;
+            mix2.Myint = 1033;
+            Console.WriteLine(mix2);
+            Console.ReadLine();
+        }
+
+        private static void StructDemo2()
+        {
             Point ett;
             ett.X = 4;
             ett.Y = 5;
