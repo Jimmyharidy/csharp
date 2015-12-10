@@ -12,7 +12,12 @@ namespace Struct
         {
             //StructDemo1();
             //StructDemo2();
-            Mixture mix1 = new Mixture(){MyBool = true, MyDouble = 5.5, Myint = 20};
+            //StructMixtureDemo();
+        }
+
+        private static void StructMixtureDemo()
+        {
+            Mixture mix1 = new Mixture() { MyBool = true, MyDouble = 5.5, Myint = 20 };
             Console.WriteLine(mix1);
             Mixture mix2;
             mix2.MyBool = false;
