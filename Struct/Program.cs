@@ -11,6 +11,11 @@ namespace Struct
         static void Main(string[] args)
         {
             //StructDemo1();
+            Point ett;
+            ett.X = 4;
+            ett.Y = 5;
+            ett = new Point(0);
+            Console.WriteLine("X: {0}, Y: {1}", ett.X, ett.Y);
         }
 
         private static void StructDemo1()
