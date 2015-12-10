@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Principal;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -32,6 +33,11 @@ namespace StructOperatorOverlagring
 
         public static Cycle operator +(Cycle cycle, int tal)
         {
+            // Om klass gör vi såhär.
+            /* om vi skapat referenstyp / class måste vi skapa en
+                kopia som vi returnerar så att inte det object som skickas 
+                in pekas på från 2 eller fler ställen.
+           */
             cycle.max += tal;
             return cycle;
         }
@@ -41,6 +47,43 @@ namespace StructOperatorOverlagring
             cycle.max -= tal;
             return cycle;
         }
+
+        public static int operator +(int tal, Cycle cycle)
+        {
+            tal += cycle.max;
+            return tal;
+        }
+
+        public static int operator -(int tal, Cycle cycle)
+        {
+            tal -= cycle.max;
+            return tal;
+        }
+
+        public static Cycle operator /(Cycle cycle, int tal)
+        {
+            cycle.max /= tal;
+            return cycle;
+        }
+        public static int operator /(int tal, Cycle cycle)
+        {
+            tal /= cycle.max;
+            return tal;
+        }
+
+        public static Cycle operator *(Cycle cycle, int tal)
+        {
+            cycle.max *= tal;
+            return cycle;
+        }
+
+        public static int operator *(int tal, Cycle cycle)
+        {
+            tal *= cycle.max;
+            return tal;
+        }
+
+      
 
         public override string ToString()
         {
