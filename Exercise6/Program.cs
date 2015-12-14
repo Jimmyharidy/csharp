@@ -15,7 +15,8 @@ namespace Exercise6
             MyDoubleType mdt1 = new MyDoubleType(5);
             MyDoubleType mdt2 = mdt1 + 5;
             MyDoubleType mdt3 = mdt1 + mdt2;
-            MyDoubleType mdt4 = new MyDoubleType(5);  // Kolla koden
+            MyDoubleType mdt4 = new MyDoubleType(5);
+            Console.WriteLine("{0},{1},{2},{3},{4}", mdt1, mdt2, mdt3, mdt1 > mdt2, mdt1==mdt4 );
             Console.WriteLine(mdt1);
             Console.WriteLine(mdt2);
             Console.WriteLine(mdt3);
@@ -27,11 +28,11 @@ namespace Exercise6
         private static void Uppgift1()
         {
             float myFloat = 10.5f;
-            long myLong = 12589562132546;
+            long myLong = 12589562132546L;
             char myChar = 'j';
             string myString = "JimmyBoy";
             // ulong kan inte ha negativa värden, endast positiva. Jätte långt 
-            ulong SuperLångtTal = 12365478965232654589;
+            ulong SuperLångtTal = 12365478965232654589UL;
             Console.WriteLine(myFloat);
             Console.WriteLine(myLong);
             Console.WriteLine(myChar);

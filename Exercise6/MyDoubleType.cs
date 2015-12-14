@@ -73,46 +73,47 @@ namespace Exercise6
             return value;
         }
 
-        public static bool operator ==(MyDoubleType value, double value2)  // Kolla koden
+        public static bool operator ==(MyDoubleType value, MyDoubleType value2) 
         {
 
-            return value2.Equals(value.DoubleValue);
+            return value2.doubleValue.Equals(value.doubleValue);
+            
             
 
         }
-        public static bool operator !=(MyDoubleType value, double value2)
+        public static bool operator !=(MyDoubleType value, MyDoubleType value2)
         {
             return !value.DoubleValue.Equals(value2);
         }
 
-        public static double operator <(MyDoubleType value, double value2)
+        public static bool operator <(MyDoubleType value, MyDoubleType value2)
         {
-            return value2.CompareTo(value.doubleValue);
+            return (value.doubleValue < value2.doubleValue);
 
         }
 
-        public static double operator >(MyDoubleType value, double value2)
+        public static bool operator >(MyDoubleType value, MyDoubleType value2)
         {
-            return value2.CompareTo(value.doubleValue);
+            return value.doubleValue > value2.doubleValue;
         }
 
-        public static double operator <=(MyDoubleType value, double value2)
+        public static bool operator <=(MyDoubleType value, MyDoubleType value2)
         {
-            return value2.CompareTo(value.doubleValue);
+            return value.doubleValue <= value2.doubleValue;
         }
 
-        public static double operator >=(MyDoubleType value, double value2)
+        public static bool operator >=(MyDoubleType value, MyDoubleType value2)
         {
-            return value2.CompareTo(value.doubleValue);
+            return value.doubleValue >= value2.doubleValue;
         }
 
         public override string ToString() => $"Double value: {doubleValue}";
-        public override bool Equals(object obj)
-        {
-            if (obj == null) throw new ArgumentNullException(nameof(obj));
-            MyDoubleType myt = (MyDoubleType) obj;
-            return DoubleValue.Equals(myt.DoubleValue);
-        }
+        //public override bool Equals(object obj)
+        //{
+        //    if (obj == null) throw new ArgumentNullException(nameof(obj));
+        //    MyDoubleType myt = (MyDoubleType) obj;
+        //    return DoubleValue.Equals(myt.DoubleValue);
+        //}
 
         public override int GetHashCode()
         {
