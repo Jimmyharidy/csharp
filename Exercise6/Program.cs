@@ -15,10 +15,11 @@ namespace Exercise6
             MyDoubleType mdt1 = new MyDoubleType(5);
             MyDoubleType mdt2 = mdt1 + 5;
             MyDoubleType mdt3 = mdt1 + mdt2;
-
+            MyDoubleType mdt4 = new MyDoubleType(5);  // Kolla koden
             Console.WriteLine(mdt1);
             Console.WriteLine(mdt2);
             Console.WriteLine(mdt3);
+            Console.WriteLine(mdt4);
             Console.ReadLine();
 
         }
