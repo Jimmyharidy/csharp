@@ -39,6 +39,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaceus", "Interfaceus\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterFaceus2", "InterFaceus2\InterFaceus2.csproj", "{928790D5-C74B-4937-9D31-0AA4D9A2ABC3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IComparableNogonting", "IComparableNogonting\IComparableNogonting.csproj", "{B512A035-2D10-4014-9839-D11032F59A49}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -117,6 +119,10 @@ Global
 		{928790D5-C74B-4937-9D31-0AA4D9A2ABC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{928790D5-C74B-4937-9D31-0AA4D9A2ABC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{928790D5-C74B-4937-9D31-0AA4D9A2ABC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B512A035-2D10-4014-9839-D11032F59A49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B512A035-2D10-4014-9839-D11032F59A49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B512A035-2D10-4014-9839-D11032F59A49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B512A035-2D10-4014-9839-D11032F59A49}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
