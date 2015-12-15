@@ -12,13 +12,18 @@ namespace Exercise6
         {
             //Uppgift3();
             //Uppgift1();
+            Uppgift4();
+
+        }
+
+        private static void Uppgift4()
+        {
             MyDoubleType mdt1 = new MyDoubleType(5);
             MyDoubleType mdt2 = mdt1 + 5;
             MyDoubleType mdt3 = mdt1 + mdt2;
             MyDoubleType mdt4 = new MyDoubleType(5);
-            Console.WriteLine("{0},{1},{2},{3},{4}", mdt1, mdt2, mdt3, mdt1 > mdt2, mdt1==mdt4 );
+            Console.WriteLine("{0},{1},{2},{3},{4}", mdt1, mdt2, mdt3, mdt1 > mdt2, mdt1 == mdt4);
             Console.ReadLine();
-
         }
 
         private static void Uppgift1()
