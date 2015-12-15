@@ -17,10 +17,6 @@ namespace Exercise6
             MyDoubleType mdt3 = mdt1 + mdt2;
             MyDoubleType mdt4 = new MyDoubleType(5);
             Console.WriteLine("{0},{1},{2},{3},{4}", mdt1, mdt2, mdt3, mdt1 > mdt2, mdt1==mdt4 );
-            Console.WriteLine(mdt1);
-            Console.WriteLine(mdt2);
-            Console.WriteLine(mdt3);
-            Console.WriteLine(mdt4);
             Console.ReadLine();
 
         }
