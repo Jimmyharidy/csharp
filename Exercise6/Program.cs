@@ -12,8 +12,14 @@ namespace Exercise6
         {
             //Uppgift3();
             //Uppgift1();
-            Uppgift4();
+            //Uppgift4();
+            Uppgift4MedClass();
 
+        }
+
+        private static void Uppgift4MedClass()
+        {
+            MyDoubleTypeClass myDoubleTypeClass = new MyDoubleTypeClass(5);
         }
 
         private static void Uppgift4()
