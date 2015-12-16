@@ -10,10 +10,10 @@ namespace Exercise6
     {
         static void Main(string[] args)
         {
-            //Uppgift3();
+            Uppgift3();
             //Uppgift1();
             //Uppgift4();
-            Uppgift4MedClass();
+            //Uppgift4MedClass();
 
         }
 
