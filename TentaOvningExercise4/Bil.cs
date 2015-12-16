@@ -8,15 +8,32 @@ namespace TentaOvningExercise4
 {
     class Bil
     {
-        
+        private string typ;
+        private string color;
         private int antalVaxlar;
         private string mark;
-        private int myVar;
+        
 
-        public int MyProperty
+        public string Typ
         {
-            get { return myVar; }
-            set { myVar = value; }
+            get { return typ; }
+            set
+            {
+                if (value.ToLower() == "kupe" || value.ToLower() == "kombi")
+                    typ = value.ToLower();
+                else
+                
+                    throw new Exception("Not a valid input!");
+                
+            }
+        }
+
+
+
+        public string Color
+        {
+            get { return color; }
+            set { color = value; }
         }
 
 
@@ -34,6 +51,22 @@ namespace TentaOvningExercise4
             set { mark = value; }
         }
 
+        public Bil()
+        {
+            Typ = "kombi";
+            Color = "black";
+            AntalVaxlar = 5;
+            Mark = "BMW";
+        }
 
+        public Bil(string typ, string color, int antalVaxlar, string mark)
+        {
+            Typ = typ;
+            Color = color;
+            AntalVaxlar = antalVaxlar;
+            Mark = mark;
+        }
+
+        public override string ToString() => $"Typ: {Typ}\r\nColor: {Color}\r\nAntalet Växlar: {AntalVaxlar}\r\nMark: {Mark}";
     }
 }
