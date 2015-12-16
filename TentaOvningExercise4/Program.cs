@@ -12,11 +12,12 @@ namespace TentaOvningExercise4
         {
             //CarMethod();
             Radio radio = new Radio() {Volume = 100, Frequence = 150, RadioOn = true};
-            Radio radiod = new Radio();
-            Radio radioExtra = new Radio(100,100);
+            //Radio radiod = new Radio();
+            //Radio radioExtra = new Radio(100,100);
+            //Radio radio4 = new Radio(99, 199);
             Console.WriteLine(radio);
-            Console.WriteLine(radiod);
-            Console.WriteLine(radioExtra);
+            //Console.WriteLine(radiod);
+            //Console.WriteLine(radioExtra);
             Console.ReadLine();
         }
 
